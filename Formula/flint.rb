@@ -8,6 +8,13 @@ class Flint < Formula
   revision 2
   head "https://github.com/wbhart/flint2.git", :branch => "trunk"
 
+  bottle do
+    root_url "https://github.com/madgen/homebrew-science/releases/download/v0.1"
+
+    cellar :any
+    sha256 "8f1e6e25397896bb87dcae91ba5d7767ca037769cc5dbf9052de7a27045ffac2" => :sierra
+  end
+
   depends_on "gmp"
   depends_on "mpfr"
 
